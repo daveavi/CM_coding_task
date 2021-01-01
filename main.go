@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"github.com/gorilla/mux"
+	"io/ioutil"
 )
 
 
@@ -19,7 +20,7 @@ type Article struct {
 
 type Articles []Article
 
-var articles = [2]Article{
+var articles = []Article{
 	Article{Id: "1", Title: "Hello", Desc: "Article Description", Content: "Article Content"},
 	Article{Id: "2", Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
 }
@@ -50,6 +51,22 @@ func getArticle(w http.ResponseWriter, r *http.Request){
 
 }
 
+func createNewArticle(w http.ResponseWriter, r *http.Request){
+	//get the body of our POST request
+	// unmarshal this into a new Article struct
+	// append this to our Articles array 
+
+	reqBody ,_ := ioutil.ReadAll(r.Body)
+	var article Article 
+	json.Unmarshal(reqBody, &article)
+
+	articles = append(articles, article)
+
+	json.NewEncoder(w).Encode(article)
+
+
+}
+
 func homePage(w http.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Homepage Endpoint Hit\n")
 }
@@ -60,7 +77,10 @@ func handleRequests(){
 	myRouter := mux.NewRouter()
 	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/articles", allArticles)
-	myRouter.HandleFunc("/articles/{id}", getArticle)
+
+	myRouter.HandleFunc("/article/{id}", getArticle)
+	myRouter.HandleFunc("/article", createNewArticle).Methods("POST")
+
 
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 }
