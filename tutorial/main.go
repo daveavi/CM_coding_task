@@ -73,7 +73,7 @@ func homePage(w http.ResponseWriter, r *http.Request){
 
 
 
-func handleRequests(){
+func hRequests(){
 	myRouter := mux.NewRouter()
 	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/articles", allArticles)
@@ -86,5 +86,5 @@ func handleRequests(){
 }
 
 func main() {
-	handleRequests()
+	hRequests()
 }
