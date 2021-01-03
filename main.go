@@ -7,8 +7,13 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var studentToMarks = make(map[string][]float64)
-var examToMarks = make(map[string][]float64)
+var studentToMarks map[string][]float64
+var examToMarks map[string][]float64
+
+
+
+
+
 //need to create our event Source handler as well
 //need to also get clear with go programming to make this easier, as well as, really invest time to think
 func allStudents(w http.ResponseWriter, r *http.Request){
@@ -16,8 +21,13 @@ func allStudents(w http.ResponseWriter, r *http.Request){
 	//try to get the students table and lock it
 	//go through key and value and fprintf each student 
 	//release lock
-	for key,_ := range studentToMarks{
-		fmt.Fprintf(w, key+"\n")
+
+	if len(studentToMarks) == 0{
+		fmt.Fprintf(w, "No student's marks have been recorded"+"\n")
+	}else{
+		for key,_ := range studentToMarks{
+			fmt.Fprintf(w, key+"\n")
+		}
 	}
 
 
@@ -60,8 +70,12 @@ func allExams(w http.ResponseWriter, r *http.Request){
 	//same as all allstudents 
 	fmt.Println("About to extract all exams")
 	//get Locks
-	for key,_ := range examToMarks{
-		fmt.Fprintf(w, key+"\n")
+	if len(examToMarks) == 0{
+		fmt.Fprintf(w,"No exam marks have been recorded yet" +"\n")
+	}else{
+		for key,_ := range examToMarks{
+			fmt.Fprintf(w, key+"\n")
+		}
 	}
 }
 func examMarks(w http.ResponseWriter, r *http.Request){
@@ -105,5 +119,11 @@ func handleRequests(){
 }
 
 func main(){
+	studentToMarks = make(map[string][]float64)
+	examToMarks = make(map[string][]float64)
+
+	studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.743508)
+	studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.764371)
+	
 	handleRequests()
 }
