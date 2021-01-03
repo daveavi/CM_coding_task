@@ -4,9 +4,11 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"encoding/json"
 	"github.com/gorilla/mux"
 	"github.com/r3labs/sse/v2" 
 )
+
 
 
 
@@ -48,11 +50,18 @@ func handleRequests(){
 }
 
 func main(){
+	type TestData struct {
+		StudentId string `json:"studentId"`
+		Exam int `json:"exam"`
+		Score float64 `json:"score"`
+	}
+
 	client := sse.NewClient("http://live-test-scores.herokuapp.com/scores")
 
 	client.Subscribe("messages", func(msg *sse.Event){
-		fmt.Println(msg.Data)
-
+		var testData TestData 
+		json.Unmarshal(msg.Data, &testData)		
+		fmt.Println(testData)
 	})
 
 
