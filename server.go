@@ -5,7 +5,10 @@ import (
 	"log"
 	"net/http"
 	"github.com/gorilla/mux"
+	"github.com/r3labs/sse/v2" 
 )
+
+
 
 
 //need to create our event Source handler as well
@@ -45,5 +48,14 @@ func handleRequests(){
 }
 
 func main(){
+	client := sse.NewClient("http://live-test-scores.herokuapp.com/scores")
+
+	client.Subscribe("messages", func(msg *sse.Event){
+		fmt.Println(msg.Data)
+
+	})
+
+
+
 	handleRequests()
 }

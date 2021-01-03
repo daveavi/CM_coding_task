@@ -48,7 +48,7 @@ func getArticle(w http.ResponseWriter, r *http.Request){
 	}
 
 	fmt.Fprintf(w, "didn't find the article\n")
-
+	
 }
 
 func createNewArticle(w http.ResponseWriter, r *http.Request){
