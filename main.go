@@ -7,9 +7,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-var studentToMarks map[string][]float64
-var examToMarks map[string][]float64
-
 
 
 
@@ -78,6 +75,8 @@ func allExams(w http.ResponseWriter, r *http.Request){
 		}
 	}
 }
+
+
 func examMarks(w http.ResponseWriter, r *http.Request){
 	vars := mux.Vars(r)
 	number := vars["number"]
@@ -107,6 +106,11 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 	fmt.Println("About to extract marks for exam number "+ number)
 }
 
+
+
+
+
+
 func handleRequests(){
 	myRouter := mux.NewRouter()
 	myRouter.HandleFunc("/students", allStudents)
@@ -116,6 +120,10 @@ func handleRequests(){
 	myRouter.HandleFunc("/exams/{number}", examMarks)
 
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
+
+
+
+	
 }
 
 func main(){
@@ -125,5 +133,11 @@ func main(){
 	studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.743508)
 	studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.764371)
 	
+	go func(){
+		handleSSE()
+	}() 
+
+
 	handleRequests()
+
 }
