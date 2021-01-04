@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "strconv"
+	"strconv"
 	"encoding/json"
 	"github.com/r3labs/sse/v2" 
 
@@ -20,14 +20,14 @@ func handleSSE(){
 		var testData TestData 
 		json.Unmarshal(msg.Data, &testData)		
 		
-		// mutexStudent.Lock()
-		// insertIntoStudents(testData.StudentId, testData.Score)
-		// mutexStudent.Unlock()
+		mutexStudent.Lock()
+		insertIntoStudents(testData.StudentId, testData.Score)
+		mutexStudent.Unlock()
 
-		// mutexExam.Lock()
-		// examString := strconv.Itoa(testData.Exam)
-		// insertIntoExams(examString, testData.Score)
-		// mutexExam.Unlock()
+		mutexExam.Lock()
+		examString := strconv.Itoa(testData.Exam)
+		insertIntoExams(examString, testData.Score)
+		mutexExam.Unlock()
 		fmt.Println("Student Id is: " + testData.StudentId)
 		fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
 		fmt.Printf("Score is: %f\n", testData.Score)
