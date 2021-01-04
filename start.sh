@@ -1,0 +1,1 @@
+go start main.go memory.go studentStream.go
