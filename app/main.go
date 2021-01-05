@@ -15,7 +15,7 @@ func allStudents(w http.ResponseWriter, r *http.Request){
 	if len(studentToMarks) == 0{
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("404 - NotFound\n"))
-		fmt.Fprintf(w, "No student's marks have been recorded"+"\n")
+		w.Write([]byte("No student's marks have been recorded"+"\n"))
 	}else{
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("200 - Okay\n"))
@@ -50,7 +50,7 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 		average = average / float64(length)
 		strAverage := fmt.Sprintf("%f", average)
 
-		fmt.Fprintf(w, "Student " + id+" exam marks average to "+ strAverage+ "\n")
+		w.Write([]byte("Student " + id+" exam marks average to "+ strAverage+ "\n"))
 	}else{
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("404 - NotFound\n"))
