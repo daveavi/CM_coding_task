@@ -1,4 +1,4 @@
-module channelMeter_coding_task
+module app
 
 go 1.15
 
