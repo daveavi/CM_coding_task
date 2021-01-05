@@ -61,7 +61,6 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 func allExams(w http.ResponseWriter, r *http.Request){
 	
 	fmt.Println("About to extract all exams")
-
 	mutexExam.Lock()
 	if len(examToMarks) == 0{
 		w.WriteHeader(http.StatusNotFound)
@@ -118,13 +117,13 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 
 func handleRequests(){
 	myRouter := mux.NewRouter()
+
 	myRouter.HandleFunc("/students", allStudents)
-	
 	myRouter.HandleFunc("/students/{id}", studentMarks)
 	myRouter.HandleFunc("/exams", allExams)
 	myRouter.HandleFunc("/exams/{number}", examMarks)
-	log.Printf("Connecting to port 8081\n")
 
+	fmt.Printf("Connecting to port 8081\n")
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 
 }
