@@ -10,7 +10,7 @@ import (
 
 
 func allStudents(w http.ResponseWriter, r *http.Request){
-	fmt.Println("About to extract all students")
+	// fmt.Println("About to extract all students")
 	mutexStudent.Lock()
 	if len(studentToMarks) == 0{
 		w.WriteHeader(http.StatusNotFound)
@@ -19,9 +19,11 @@ func allStudents(w http.ResponseWriter, r *http.Request){
 	}else{
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("200 - Okay\n"))
+
 		for key,_ := range studentToMarks{
 			fmt.Fprintf(w, key+"\n")
 		}
+
 	}
 	mutexStudent.Unlock()
 }
@@ -31,6 +33,7 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 	id := vars["id"]
 	
 	fmt.Println("About to extract exam marks for student " + id)
+
 	mutexStudent.Lock()
 	if marks, ok:=studentToMarks[id]; ok{
 		w.WriteHeader(http.StatusOK)
@@ -45,13 +48,13 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 
 		length := len(studentToMarks[id])
 		average = average / float64(length)
-
 		strAverage := fmt.Sprintf("%f", average)
+
 		fmt.Fprintf(w, "Student " + id+" exam marks average to "+ strAverage+ "\n")
 	}else{
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("404 - NotFound\n"))
-		fmt.Fprintf(w, "Student " + id+" does not exist\n")
+		w.Write([]byte("Student " + id+" does not exist\n"))
 	}
 	mutexStudent.Unlock()
 
@@ -65,12 +68,13 @@ func allExams(w http.ResponseWriter, r *http.Request){
 	if len(examToMarks) == 0{
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("404 - NotFound\n"))
-		fmt.Fprintf(w,"No exam marks have been recorded yet" +"\n")
+		w.Write([]byte("No exam marks have been recorded yet" +"\n"))
 	}else{
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("200 - Okay\n"))
+
 		for key,_ := range examToMarks{
-			fmt.Fprintf(w, key+"\n")
+			w.Write([]byte(key+"\n"))
 		}
 	}
 	mutexExam.Unlock()
@@ -91,7 +95,7 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 		
 		for _,num := range marks{
 			s := fmt.Sprintf("%f", num)
-			fmt.Fprintf(w, s +"\n")
+			w.Write([]byte(s +"\n"))
 			average += num
 		}
 
@@ -99,11 +103,11 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 		average = average / float64(length)
 		strAverage := fmt.Sprintf("%f", average)
 
-		fmt.Fprintf(w, "For exam: " + number+", the average turned out to be "+ strAverage+ "\n")
+		w.Write([]byte("For exam: " + number+", the average turned out to be "+ strAverage+ "\n"))
 	}else{
 		w.WriteHeader(http.StatusNotFound)
 		w.Write([]byte("404 - NotFound\n"))
-		fmt.Fprintf(w, "Exam " + number+" does not exist\n")
+		w.Write([]byte("Exam " + number+" does not exist\n"))
 	}
 	mutexExam.Unlock()
 
@@ -139,7 +143,7 @@ func main(){
 
 	if len(toGetAllArgs) == 1 && toGetAllArgs[0] == "startSSE" {
 		go func(){
-			fmt.Printf("Starting goroutine, for sse events\n")
+			fmt.Printf("Starting goroutine, for Server Sent Events\n")
 			handleSSE()
 		}() 
 	}else if len(toGetAllArgs) > 1{

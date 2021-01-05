@@ -5,7 +5,8 @@ import (
 	"strconv"
 	"encoding/json"
 	"github.com/r3labs/sse/v2" 
-
+	"os"
+	"log"
 )
 
 
@@ -23,19 +24,39 @@ func handleSSE(){
 		var testData TestData 
 		json.Unmarshal(msg.Data, &testData)		
 		
+		examString := strconv.Itoa(testData.Exam)
+		scoreString := fmt.Sprintf("%f", testData.Score)
+		writeDataToFile(testData.StudentId, examString, scoreString)
+
+
 		mutexStudent.Lock()
 		insertIntoStudents(testData.StudentId, testData.Score)
 		mutexStudent.Unlock()
 
 		mutexExam.Lock()
-		examString := strconv.Itoa(testData.Exam)
 		insertIntoExams(examString, testData.Score)
 		mutexExam.Unlock()
 
-		fmt.Println("Student Id is: " + testData.StudentId)
-		fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
-		fmt.Printf("Score is: %f\n", testData.Score)
+		
+		
 	})
+}
+
+
+func writeDataToFile(studentId string, examString string, scoreString string){
+	logData := []byte("Student Id is: " + studentId +"\n" + "Exam Number is: " +examString +"\n" + "Score is: " + scoreString + "\n\n")
+
+	f, err := os.OpenFile("examStudentLog.txt",  os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil{
+		log.Fatal(err)
+	}
+
+	if _, err := f.Write(logData); err != nil {
+		log.Fatal(err)
+	}
+	if err := f.Close(); err != nil {
+		log.Fatal(err)
+	}
 }
 
 

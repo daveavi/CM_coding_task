@@ -1,7 +1,7 @@
 import random, string, subprocess
 import time
 
-requests = 700
+requests = 500
 
 processes = []
 
@@ -10,7 +10,7 @@ initReq = "Initializing {} requests".format(requests)
 print(initReq)
 for i in range(requests):
 
-	request= "http://localhost:8081/students" 
+	request= "http://localhost:8081/exams" 
 	p = subprocess.Popen(["curl", "-X", "GET", request], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 	processes.append(p)
 
