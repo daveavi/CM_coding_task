@@ -2,14 +2,14 @@ sleep 2
 
 echo First Student List:
 
-curl http://localhost:8081/students 
+curl http://localhost:8081/exams 
 echo 
 sleep 2 
 
 
 echo Second Student List:
 
-curl http://localhost:8081/students
+curl http://localhost:8081/exams/500
 echo 
 
 port=8081

@@ -1,7 +1,7 @@
 import random, string, subprocess
 import time
 
-requests = 500
+requests = 100
 
 processes = []
 
