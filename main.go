@@ -13,8 +13,12 @@ func allStudents(w http.ResponseWriter, r *http.Request){
 	fmt.Println("About to extract all students")
 	mutexStudent.Lock()
 	if len(studentToMarks) == 0{
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("404 - NotFound"))
 		fmt.Fprintf(w, "No student's marks have been recorded"+"\n")
 	}else{
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("200 - Okay"))
 		for key,_ := range studentToMarks{
 			fmt.Fprintf(w, key+"\n")
 		}
@@ -28,6 +32,8 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 	fmt.Println("About to extract exam marks for student " + id)
 	mutexStudent.Lock()
 	if marks, ok:=studentToMarks[id]; ok{
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("200 - Okay"))
 		average := 0.0 
 		
 		for _,num := range marks{
@@ -42,6 +48,8 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 		strAverage := fmt.Sprintf("%f", average)
 		fmt.Fprintf(w, "Student " + id+" exam marks average to "+ strAverage+ "\n")
 	}else{
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("404 - NotFound"))
 		fmt.Fprintf(w, "Student " + id+" does not exist\n")
 	}
 	mutexStudent.Unlock()
@@ -70,8 +78,11 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 	number := vars["number"]
 
 	fmt.Println("About to extract marks for exam number "+ number)
+
 	mutexExam.Lock()
 	if marks, ok := examToMarks[number]; ok{
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("200 - Okay"))
 		average := 0.0
 		
 		for _,num := range marks{
@@ -86,6 +97,8 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 		strAverage := fmt.Sprintf("%f", average)
 		fmt.Fprintf(w, "For exam: " + number+", the average turned out to be "+ strAverage+ "\n")
 	}else{
+		w.WriteHeader(http.StatusNotFound)
+		w.Write([]byte("404 - NotFound"))
 		fmt.Fprintf(w, "Exam " + number+" does not exist\n")
 	}
 	mutexExam.Unlock()
@@ -106,6 +119,7 @@ func handleRequests(){
 	myRouter.HandleFunc("/exams", allExams)
 	myRouter.HandleFunc("/exams/{number}", examMarks)
 	log.Printf("Connecting to port 8081\n")
+
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 
 }
@@ -122,7 +136,7 @@ func main(){
 
 	if len(toGetAllArgs) == 1 && toGetAllArgs[0] == "startSSE" {
 		go func(){
-			fmt.Printf("Started goroutine, for sse events\n")
+			fmt.Printf("Starting goroutine, for sse events\n")
 			handleSSE()
 		}() 
 	}else if len(toGetAllArgs) > 1{

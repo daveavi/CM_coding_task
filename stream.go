@@ -1,7 +1,7 @@
 package main 
 
 import (
-	// "fmt"
+	"fmt"
 	"strconv"
 	"encoding/json"
 	"github.com/r3labs/sse/v2" 
@@ -32,9 +32,9 @@ func handleSSE(){
 		insertIntoExams(examString, testData.Score)
 		mutexExam.Unlock()
 
-		// fmt.Println("Student Id is: " + testData.StudentId)
-		// fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
-		// fmt.Printf("Score is: %f\n", testData.Score)
+		fmt.Println("Student Id is: " + testData.StudentId)
+		fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
+		fmt.Printf("Score is: %f\n", testData.Score)
 	})
 }
 
