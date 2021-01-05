@@ -1,1 +1,0 @@
-go run main.go memory.go studentStream.go

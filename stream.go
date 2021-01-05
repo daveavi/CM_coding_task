@@ -1,7 +1,7 @@
 package main 
 
 import (
-	"fmt"
+	// "fmt"
 	"strconv"
 	"encoding/json"
 	"github.com/r3labs/sse/v2" 
@@ -10,12 +10,15 @@ import (
 
 
 func handleSSE(){
+
 	type TestData struct {
 		StudentId string `json:"studentId"`
 		Exam int `json:"exam"`
 		Score float64 `json:"score"`
 	}
+
 	client := sse.NewClient("http://live-test-scores.herokuapp.com/scores")
+
 	client.Subscribe("messages", func(msg *sse.Event){
 		var testData TestData 
 		json.Unmarshal(msg.Data, &testData)		
@@ -28,9 +31,10 @@ func handleSSE(){
 		examString := strconv.Itoa(testData.Exam)
 		insertIntoExams(examString, testData.Score)
 		mutexExam.Unlock()
-		fmt.Println("Student Id is: " + testData.StudentId)
-		fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
-		fmt.Printf("Score is: %f\n", testData.Score)
+
+		// fmt.Println("Student Id is: " + testData.StudentId)
+		// fmt.Printf("Exam Number is: %d\n" , testData.Exam) 
+		// fmt.Printf("Score is: %f\n", testData.Score)
 	})
 }
 

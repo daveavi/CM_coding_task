@@ -3,14 +3,10 @@ package main
 import (
 	"fmt"
 	"log"
-	// "time"
-	// "sync"
 	"net/http"
 	"github.com/gorilla/mux"
+	"os"
 )
-
-
-
 
 
 func allStudents(w http.ResponseWriter, r *http.Request){
@@ -24,8 +20,6 @@ func allStudents(w http.ResponseWriter, r *http.Request){
 		}
 	}
 	mutexStudent.Unlock()
-
-
 }
 func studentMarks(w http.ResponseWriter, r *http.Request){
 	vars := mux.Vars(r)
@@ -52,10 +46,8 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 	}
 	mutexStudent.Unlock()
 
-
-
-	fmt.Println("About to extract exam marks for student " + id)
 }
+
 
 func allExams(w http.ResponseWriter, r *http.Request){
 	
@@ -99,8 +91,6 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 	mutexExam.Unlock()
 
 	
-	//same as all students
-	fmt.Println("About to extract marks for exam number "+ number)
 }
 
 
@@ -115,24 +105,31 @@ func handleRequests(){
 	myRouter.HandleFunc("/students/{id}", studentMarks)
 	myRouter.HandleFunc("/exams", allExams)
 	myRouter.HandleFunc("/exams/{number}", examMarks)
-	log.Printf("Connecting to port 8081")
+	log.Printf("Connecting to port 8081\n")
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 
-
-	
 }
 
 func main(){
+	
+
 	studentToMarks = make(map[string][]float64)
 	examToMarks = make(map[string][]float64)
-	// studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.743508)
-	// studentToMarks["Kellie64"] = append(studentToMarks["Kellie64"] , 0.764371)
 
-	
-	go func(){
-		log.Printf("started goroutine, for sse events")
-		handleSSE()
-	}() 
+
+
+	toGetAllArgs := os.Args[1:] 
+
+	if len(toGetAllArgs) == 1 && toGetAllArgs[0] == "startSSE" {
+		go func(){
+			fmt.Printf("Started goroutine, for sse events\n")
+			handleSSE()
+		}() 
+	}else if len(toGetAllArgs) > 1{
+		fmt.Printf("You only need one argument, to run this server\n")
+		fmt.Printf("If you want to start Server Sent Events, only add startSSE\n")
+		return
+	}
 
 	handleRequests()
 
