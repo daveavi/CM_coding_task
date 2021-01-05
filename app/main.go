@@ -10,7 +10,7 @@ import (
 
 
 func allStudents(w http.ResponseWriter, r *http.Request){
-	// fmt.Println("About to extract all students")
+	fmt.Println("About to extract all students")
 	mutexStudent.Lock()
 	if len(studentToMarks) == 0{
 		w.WriteHeader(http.StatusNotFound)

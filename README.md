@@ -38,5 +38,4 @@ Testing:
 
 Before running startWithSSE.sh or startNoSSE.SH:
     - run this command on terminal to give them executable permissions: chmod -x {"scriptName"}. After that simply run the script by typing in the name of the script. 
-    - Also run this to be able to use mux for routing, go get github.com/gorilla/mux
     
