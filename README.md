@@ -11,7 +11,7 @@ Running Application:
 Testing:
     - For testing, I provided a series of integration tests and a python script to test the performance of the get requests 
 
-    -It is a bit difficult to test for functionality given that the stream is constantly flowing through our API. So to test for endpoints /exams/{number} and /students/{id}, I have made my SSE client call back create and write to a file under the app folder called, examStudentLog.txt, that will be logging data coming in via the JSON payload. That way it will be possible for you to test specific IDs. I used the text file examStudentLog.txt to manually update the curl calls in my bash scripts so I can test for 200 status responses.
+    -It is a bit difficult to test for functionality given that the stream is constantly flowing through our API. So to test for endpoints /exams/{number} and /students/{id}, I have made my SSE client create and write to a file under the app folder called, examStudentLog.txt, that will be logging data coming in via the JSON payload. That way it will be possible for you to test specific IDs. I used the text file examStudentLog.txt to manually update the curl calls in my bash scripts so I can test for 200 status responses.
 
 
     Integration Tests:
@@ -23,16 +23,16 @@ Testing:
         
         3. testStudentList.sh: Same as testExamList.sh, but for students.
         
-        4. testStudentMarksList.sh: Almost the same test as testExamMarksList, but this is to ensure that exam marks for the specific student are listed as well as the average of their marks changing over time. 
+        4. testStudentMarksList.sh: Same test as testExamMarksList, but this is to ensure that exam marks for the specific student are listed as well as the average of their marks changing over time. 
 
         5. testStudentNotExist.sh: This test is to validate if we get a 404 if we try to request marks for a student that doesn't exist. 
 
-        Tests testExamMarksList.sh,testExamList,testStudentMarksList,testStudentList require you to run startWithSSE.sh in a separate terminal or bash window, unfortunately, there was no command I could find that could replicate this action using macOS terminal. For tests testExamNotExist and testStudentNotExist, run startNoSSE.sh in another terminal so no data will be populated in my local memory space.  
+        Tests testExamMarksList.sh,testExamList,testStudentMarksList,testStudentList, I ran startWithSSE.sh in a separate terminal or bash window, unfortunately, there was no command I could find that could replicate this action using macOS terminal. For tests testExamNotExist and testStudentNotExist, I ran startNoSSE.sh in another terminal window so no data will be populated in my local memory space, to test if I get a 404 accordingly.  
 
     Performance Tests: 
-        1. readTest.py: This test is used to test the performance of doing concurrent get requests to my API. To run this test, run the command python3 readTest.py. To change the number of requests, you can increase the requests variable to a higher number, right now it is at 100. Also, python3 is required to run this script, if you are using a mac, you can simply brew install python, and you should be able to use python3 in your terminal. 
+        1. readTest.py: This test is used to test the performance of doing concurrent get requests to my API. To run this test, run the command python3 readTest.py. To change the number of requests, you can increase the requests variable to a higher number, right now it is at 500. Also, python3 is required to run this script, if you are using a mac, you can simply brew install python, and you should be able to use python3 in your terminal. 
 
-        Currently, the bottleneck for several concurrent requests is around 490-500, after 500 requests, the test starts crashing. I was having trouble figuring this out because I am thinking my bottleneck could be my HTTP request handler, but I was confused because go handles HTTP requests concurrently. 
+        Currently, the bottleneck for several concurrent requests is around 500, after 500 requests, the test starts crashing. I was having trouble figuring this out because I was thinking my bottleneck could be my HTTP request handler, but I was confused because go handles HTTP requests concurrently.  
     
 
 

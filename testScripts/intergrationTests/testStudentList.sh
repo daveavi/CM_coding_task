@@ -1,16 +1,13 @@
-sleep 2 
-
-echo First Student List:
-
+echo First List of Students:
 curl http://localhost:8081/students 
-echo 
+echo
+
 sleep 2 
 
 
-echo Second Student List:
-
+echo Second List of Students:
 curl http://localhost:8081/students
-echo 
+
 
 port=8081
 result="`lsof -Fp -n -i :$port | grep p`"

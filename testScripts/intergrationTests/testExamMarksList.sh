@@ -1,14 +1,11 @@
-echo First Exam List:
-
-echo 
+#note, the exam number may need to change for the test
+echo Marks "for" Exam 8489:
 curl http://localhost:8081/exams/8489 
-
+echo
 sleep 5 
 
-echo Second Exam List:
 
-echo 
-
+echo Exam 8489 marks updated:
 curl http://localhost:8081/exams/8489
 
 port=8081

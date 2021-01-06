@@ -1,16 +1,10 @@
-sleep 2 
-
-echo First Student List:
-
-echo 
+echo "Reece_Wisoky6's" Exam Marks:
 curl http://localhost:8081/students/Reece_Wisoky6 
+echo
 
 sleep 5 
 
-echo Second Student List:
-
-echo 
-
+echo "Reece_Wisoky6's" Exam Marks updated:
 curl http://localhost:8081/students/Reece_Wisoky6
 
 port=8081
