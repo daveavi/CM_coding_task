@@ -2,7 +2,7 @@ ChannelMeter Coding Assessment by Avi Dave
 
 Running Application: 
     - I have provided two bash scripts in the root directory to start the server
-        1. startWithSSE.sh : This script kickstarts the server along with waiting for the Heroku service to send Server-Sent Events in a goroutine
+        1. startWithSSE.sh : This script kickstarts the server along with calling the Heroku service to send Server-Sent Events in a goroutine
         2. startNoSSE.sh: This script kickstarts the server without calling the Heroku service. 
 
 
@@ -11,7 +11,7 @@ Running Application:
 Testing:
     - For testing, I provided a series of integration tests and a python script to test the performance of the get requests 
 
-    -It is a bit difficult to test for functionality given that the stream is constantly flowing through our API. So to test for endpoints /exams/{number} and /students/{id}, I have made my SSE client call back create and write to a file under the app folder called, examStudentLog.txt, that will be logging data coming in via the JSON payload. That way it will be possible for you to test specific IDs. I used the text file examStudentLog.txt to manually update the curl calls in my bash scripts so I can test for 200 status responses. I know this isn't the best practice, because it would be better to find a way to automate it somehow, but with the stream constantly flowing through, it was hard for me to test for an example that never changes.
+    -It is a bit difficult to test for functionality given that the stream is constantly flowing through our API. So to test for endpoints /exams/{number} and /students/{id}, I have made my SSE client call back create and write to a file under the app folder called, examStudentLog.txt, that will be logging data coming in via the JSON payload. That way it will be possible for you to test specific IDs. I used the text file examStudentLog.txt to manually update the curl calls in my bash scripts so I can test for 200 status responses.
 
 
     Integration Tests:
@@ -37,5 +37,5 @@ Testing:
 
 
 Before running startWithSSE.sh or startNoSSE.SH:
-    - run this command on terminal to give them executable permissions: chmod -x {"scriptName"}. After that simply run the script by typing in the name of the script. 
+    - run this command on terminal to give them executable permissions: chmod +x {"scriptName"}. After that simply run the script by typing in the name of the script. 
     

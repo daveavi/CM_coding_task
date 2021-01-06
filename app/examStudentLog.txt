@@ -1,0 +1,1120 @@
+Student Id is: Nick_Crooks73
+Exam Number is: 15581
+Score is: 0.653885
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15581
+Score is: 0.685853
+
+Student Id is: Reyes92
+Exam Number is: 15581
+Score is: 0.909974
+
+Student Id is: Nikki47
+Exam Number is: 15581
+Score is: 0.939512
+
+Student Id is: Liam.Friesen
+Exam Number is: 15581
+Score is: 0.810025
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15581
+Score is: 0.768782
+
+Student Id is: Emily_Dooley
+Exam Number is: 15581
+Score is: 0.843132
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15581
+Score is: 0.732125
+
+Student Id is: Cecile44
+Exam Number is: 15581
+Score is: 0.750631
+
+Student Id is: Aric23
+Exam Number is: 15581
+Score is: 0.682601
+
+Student Id is: Charity15
+Exam Number is: 15581
+Score is: 0.679021
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15581
+Score is: 0.764904
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15581
+Score is: 0.759046
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15581
+Score is: 0.857392
+
+Student Id is: Douglas84
+Exam Number is: 15581
+Score is: 0.792586
+
+Student Id is: Lydia82
+Exam Number is: 15581
+Score is: 0.631281
+
+Student Id is: Clay.Hermann
+Exam Number is: 15581
+Score is: 0.773342
+
+Student Id is: Pearlie84
+Exam Number is: 15581
+Score is: 0.644873
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15581
+Score is: 0.860664
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15581
+Score is: 0.739609
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15582
+Score is: 0.661052
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15582
+Score is: 0.753227
+
+Student Id is: Reyes92
+Exam Number is: 15582
+Score is: 0.918079
+
+Student Id is: Nikki47
+Exam Number is: 15582
+Score is: 0.609892
+
+Student Id is: Liam.Friesen
+Exam Number is: 15582
+Score is: 0.665005
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15582
+Score is: 0.746001
+
+Student Id is: Emily_Dooley
+Exam Number is: 15582
+Score is: 0.723998
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15582
+Score is: 0.584119
+
+Student Id is: Cecile44
+Exam Number is: 15582
+Score is: 0.770638
+
+Student Id is: Aric23
+Exam Number is: 15582
+Score is: 0.784950
+
+Student Id is: Charity15
+Exam Number is: 15582
+Score is: 0.798900
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15582
+Score is: 0.819260
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15582
+Score is: 0.674723
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15582
+Score is: 0.721053
+
+Student Id is: Douglas84
+Exam Number is: 15582
+Score is: 0.887238
+
+Student Id is: Lydia82
+Exam Number is: 15582
+Score is: 0.723956
+
+Student Id is: Clay.Hermann
+Exam Number is: 15582
+Score is: 0.804321
+
+Student Id is: Pearlie84
+Exam Number is: 15582
+Score is: 0.685984
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15582
+Score is: 0.688545
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15582
+Score is: 0.907953
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15583
+Score is: 0.783962
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15583
+Score is: 0.836520
+
+Student Id is: Reyes92
+Exam Number is: 15583
+Score is: 0.793773
+
+Student Id is: Nikki47
+Exam Number is: 15583
+Score is: 0.639316
+
+Student Id is: Liam.Friesen
+Exam Number is: 15583
+Score is: 1.016419
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15583
+Score is: 0.633383
+
+Student Id is: Emily_Dooley
+Exam Number is: 15583
+Score is: 0.763495
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15583
+Score is: 0.809192
+
+Student Id is: Cecile44
+Exam Number is: 15583
+Score is: 0.803088
+
+Student Id is: Aric23
+Exam Number is: 15583
+Score is: 0.670702
+
+Student Id is: Charity15
+Exam Number is: 15583
+Score is: 0.753966
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15583
+Score is: 0.748159
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15583
+Score is: 0.718516
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15583
+Score is: 0.647912
+
+Student Id is: Douglas84
+Exam Number is: 15583
+Score is: 0.799620
+
+Student Id is: Lydia82
+Exam Number is: 15583
+Score is: 0.811485
+
+Student Id is: Clay.Hermann
+Exam Number is: 15583
+Score is: 0.756067
+
+Student Id is: Pearlie84
+Exam Number is: 15583
+Score is: 0.724566
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15583
+Score is: 0.869377
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15583
+Score is: 0.863874
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15584
+Score is: 0.705412
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15584
+Score is: 0.711828
+
+Student Id is: Reyes92
+Exam Number is: 15584
+Score is: 0.800407
+
+Student Id is: Nikki47
+Exam Number is: 15584
+Score is: 0.555585
+
+Student Id is: Liam.Friesen
+Exam Number is: 15584
+Score is: 0.608514
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15584
+Score is: 0.614146
+
+Student Id is: Emily_Dooley
+Exam Number is: 15584
+Score is: 0.732468
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15584
+Score is: 0.749906
+
+Student Id is: Cecile44
+Exam Number is: 15584
+Score is: 0.910399
+
+Student Id is: Aric23
+Exam Number is: 15584
+Score is: 0.751031
+
+Student Id is: Charity15
+Exam Number is: 15584
+Score is: 0.582061
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15584
+Score is: 0.684702
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15584
+Score is: 0.724847
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15584
+Score is: 0.720797
+
+Student Id is: Douglas84
+Exam Number is: 15584
+Score is: 0.626930
+
+Student Id is: Lydia82
+Exam Number is: 15584
+Score is: 0.702454
+
+Student Id is: Clay.Hermann
+Exam Number is: 15584
+Score is: 0.715684
+
+Student Id is: Pearlie84
+Exam Number is: 15584
+Score is: 0.694435
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15584
+Score is: 0.699963
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15584
+Score is: 0.713319
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15585
+Score is: 0.809189
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15585
+Score is: 0.884206
+
+Student Id is: Reyes92
+Exam Number is: 15585
+Score is: 0.698975
+
+Student Id is: Nikki47
+Exam Number is: 15585
+Score is: 0.660381
+
+Student Id is: Liam.Friesen
+Exam Number is: 15585
+Score is: 0.746541
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15585
+Score is: 0.830461
+
+Student Id is: Emily_Dooley
+Exam Number is: 15585
+Score is: 0.809297
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15585
+Score is: 0.666564
+
+Student Id is: Cecile44
+Exam Number is: 15585
+Score is: 0.855434
+
+Student Id is: Aric23
+Exam Number is: 15585
+Score is: 0.846205
+
+Student Id is: Charity15
+Exam Number is: 15585
+Score is: 0.829230
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15585
+Score is: 0.660050
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15585
+Score is: 0.778872
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15585
+Score is: 0.829027
+
+Student Id is: Douglas84
+Exam Number is: 15585
+Score is: 0.753224
+
+Student Id is: Lydia82
+Exam Number is: 15585
+Score is: 0.739565
+
+Student Id is: Clay.Hermann
+Exam Number is: 15585
+Score is: 0.704042
+
+Student Id is: Pearlie84
+Exam Number is: 15585
+Score is: 0.797896
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15585
+Score is: 0.607605
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15585
+Score is: 0.762381
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15586
+Score is: 0.727507
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15586
+Score is: 0.893664
+
+Student Id is: Reyes92
+Exam Number is: 15586
+Score is: 0.746467
+
+Student Id is: Nikki47
+Exam Number is: 15586
+Score is: 0.808147
+
+Student Id is: Liam.Friesen
+Exam Number is: 15586
+Score is: 0.726841
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15586
+Score is: 0.845656
+
+Student Id is: Emily_Dooley
+Exam Number is: 15586
+Score is: 0.781475
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15586
+Score is: 0.776992
+
+Student Id is: Cecile44
+Exam Number is: 15586
+Score is: 0.864020
+
+Student Id is: Aric23
+Exam Number is: 15586
+Score is: 0.812781
+
+Student Id is: Charity15
+Exam Number is: 15586
+Score is: 0.646409
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15586
+Score is: 0.788828
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15586
+Score is: 0.937457
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15586
+Score is: 0.681156
+
+Student Id is: Douglas84
+Exam Number is: 15586
+Score is: 0.750333
+
+Student Id is: Lydia82
+Exam Number is: 15586
+Score is: 0.747939
+
+Student Id is: Clay.Hermann
+Exam Number is: 15586
+Score is: 0.718338
+
+Student Id is: Pearlie84
+Exam Number is: 15586
+Score is: 0.883371
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15586
+Score is: 0.653835
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15586
+Score is: 0.839542
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15587
+Score is: 0.750597
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15587
+Score is: 0.735988
+
+Student Id is: Reyes92
+Exam Number is: 15587
+Score is: 0.766224
+
+Student Id is: Nikki47
+Exam Number is: 15587
+Score is: 0.808789
+
+Student Id is: Liam.Friesen
+Exam Number is: 15587
+Score is: 0.769044
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15587
+Score is: 0.775554
+
+Student Id is: Emily_Dooley
+Exam Number is: 15587
+Score is: 0.754994
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15587
+Score is: 0.624457
+
+Student Id is: Cecile44
+Exam Number is: 15587
+Score is: 0.695070
+
+Student Id is: Aric23
+Exam Number is: 15587
+Score is: 0.806259
+
+Student Id is: Charity15
+Exam Number is: 15587
+Score is: 0.762134
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15587
+Score is: 0.715115
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15587
+Score is: 0.615048
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15587
+Score is: 0.726906
+
+Student Id is: Douglas84
+Exam Number is: 15587
+Score is: 0.863437
+
+Student Id is: Lydia82
+Exam Number is: 15587
+Score is: 0.793986
+
+Student Id is: Clay.Hermann
+Exam Number is: 15587
+Score is: 0.685641
+
+Student Id is: Pearlie84
+Exam Number is: 15587
+Score is: 0.854709
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15587
+Score is: 0.753110
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15587
+Score is: 0.848553
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15588
+Score is: 0.849255
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15588
+Score is: 0.625185
+
+Student Id is: Reyes92
+Exam Number is: 15588
+Score is: 0.625532
+
+Student Id is: Nikki47
+Exam Number is: 15588
+Score is: 0.752204
+
+Student Id is: Liam.Friesen
+Exam Number is: 15588
+Score is: 0.551023
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15588
+Score is: 0.774563
+
+Student Id is: Emily_Dooley
+Exam Number is: 15588
+Score is: 0.765998
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15588
+Score is: 0.770445
+
+Student Id is: Cecile44
+Exam Number is: 15588
+Score is: 0.793417
+
+Student Id is: Aric23
+Exam Number is: 15588
+Score is: 0.834887
+
+Student Id is: Charity15
+Exam Number is: 15588
+Score is: 0.750746
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15588
+Score is: 0.830087
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15588
+Score is: 0.763518
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15588
+Score is: 0.732985
+
+Student Id is: Douglas84
+Exam Number is: 15588
+Score is: 0.800790
+
+Student Id is: Lydia82
+Exam Number is: 15588
+Score is: 0.694774
+
+Student Id is: Clay.Hermann
+Exam Number is: 15588
+Score is: 0.788750
+
+Student Id is: Pearlie84
+Exam Number is: 15588
+Score is: 0.872110
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15588
+Score is: 0.772523
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15588
+Score is: 0.683959
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15589
+Score is: 0.580752
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15589
+Score is: 0.747034
+
+Student Id is: Reyes92
+Exam Number is: 15589
+Score is: 0.791942
+
+Student Id is: Nikki47
+Exam Number is: 15589
+Score is: 0.745177
+
+Student Id is: Liam.Friesen
+Exam Number is: 15589
+Score is: 0.743544
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15589
+Score is: 0.623660
+
+Student Id is: Emily_Dooley
+Exam Number is: 15589
+Score is: 0.651472
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15589
+Score is: 0.772101
+
+Student Id is: Cecile44
+Exam Number is: 15589
+Score is: 0.662429
+
+Student Id is: Aric23
+Exam Number is: 15589
+Score is: 0.835259
+
+Student Id is: Charity15
+Exam Number is: 15589
+Score is: 0.654305
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15589
+Score is: 0.760213
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15589
+Score is: 0.684195
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15589
+Score is: 0.799903
+
+Student Id is: Douglas84
+Exam Number is: 15589
+Score is: 0.810192
+
+Student Id is: Lydia82
+Exam Number is: 15589
+Score is: 0.746247
+
+Student Id is: Clay.Hermann
+Exam Number is: 15589
+Score is: 0.665308
+
+Student Id is: Pearlie84
+Exam Number is: 15589
+Score is: 0.708295
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15589
+Score is: 0.741266
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15589
+Score is: 0.717680
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15590
+Score is: 0.766766
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15590
+Score is: 0.653609
+
+Student Id is: Reyes92
+Exam Number is: 15590
+Score is: 0.805851
+
+Student Id is: Nikki47
+Exam Number is: 15590
+Score is: 0.730187
+
+Student Id is: Liam.Friesen
+Exam Number is: 15590
+Score is: 0.872226
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15590
+Score is: 0.697723
+
+Student Id is: Emily_Dooley
+Exam Number is: 15590
+Score is: 0.793308
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15590
+Score is: 0.773514
+
+Student Id is: Cecile44
+Exam Number is: 15590
+Score is: 0.662475
+
+Student Id is: Aric23
+Exam Number is: 15590
+Score is: 0.690746
+
+Student Id is: Charity15
+Exam Number is: 15590
+Score is: 0.713960
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15590
+Score is: 0.785817
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15590
+Score is: 0.887997
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15590
+Score is: 0.836748
+
+Student Id is: Douglas84
+Exam Number is: 15590
+Score is: 0.732313
+
+Student Id is: Lydia82
+Exam Number is: 15590
+Score is: 0.684964
+
+Student Id is: Clay.Hermann
+Exam Number is: 15590
+Score is: 0.855314
+
+Student Id is: Pearlie84
+Exam Number is: 15590
+Score is: 0.805578
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15590
+Score is: 0.760252
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15590
+Score is: 0.742426
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15591
+Score is: 0.865365
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15591
+Score is: 0.770545
+
+Student Id is: Reyes92
+Exam Number is: 15591
+Score is: 0.706566
+
+Student Id is: Nikki47
+Exam Number is: 15591
+Score is: 0.703333
+
+Student Id is: Liam.Friesen
+Exam Number is: 15591
+Score is: 0.844408
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15591
+Score is: 0.529893
+
+Student Id is: Emily_Dooley
+Exam Number is: 15591
+Score is: 0.823963
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15591
+Score is: 0.702553
+
+Student Id is: Cecile44
+Exam Number is: 15591
+Score is: 0.853767
+
+Student Id is: Aric23
+Exam Number is: 15591
+Score is: 0.844589
+
+Student Id is: Charity15
+Exam Number is: 15591
+Score is: 0.737622
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15591
+Score is: 0.635361
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15591
+Score is: 0.761539
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15591
+Score is: 0.672658
+
+Student Id is: Douglas84
+Exam Number is: 15591
+Score is: 0.696321
+
+Student Id is: Lydia82
+Exam Number is: 15591
+Score is: 0.830495
+
+Student Id is: Clay.Hermann
+Exam Number is: 15591
+Score is: 0.753059
+
+Student Id is: Pearlie84
+Exam Number is: 15591
+Score is: 0.783502
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15591
+Score is: 0.798703
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15591
+Score is: 0.788987
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15592
+Score is: 0.612569
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15592
+Score is: 0.780910
+
+Student Id is: Reyes92
+Exam Number is: 15592
+Score is: 0.773779
+
+Student Id is: Nikki47
+Exam Number is: 15592
+Score is: 0.886486
+
+Student Id is: Liam.Friesen
+Exam Number is: 15592
+Score is: 0.676164
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15592
+Score is: 0.811874
+
+Student Id is: Emily_Dooley
+Exam Number is: 15592
+Score is: 0.692562
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15592
+Score is: 0.655051
+
+Student Id is: Cecile44
+Exam Number is: 15592
+Score is: 0.791046
+
+Student Id is: Aric23
+Exam Number is: 15592
+Score is: 0.738213
+
+Student Id is: Charity15
+Exam Number is: 15592
+Score is: 0.762329
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15592
+Score is: 0.662796
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15592
+Score is: 0.794198
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15592
+Score is: 0.904462
+
+Student Id is: Douglas84
+Exam Number is: 15592
+Score is: 0.898507
+
+Student Id is: Lydia82
+Exam Number is: 15592
+Score is: 0.651685
+
+Student Id is: Clay.Hermann
+Exam Number is: 15592
+Score is: 0.678154
+
+Student Id is: Pearlie84
+Exam Number is: 15592
+Score is: 0.818827
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15592
+Score is: 0.769228
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15592
+Score is: 0.724037
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15593
+Score is: 0.730821
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15593
+Score is: 0.730408
+
+Student Id is: Reyes92
+Exam Number is: 15593
+Score is: 0.728742
+
+Student Id is: Nikki47
+Exam Number is: 15593
+Score is: 0.667918
+
+Student Id is: Liam.Friesen
+Exam Number is: 15593
+Score is: 0.763476
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15593
+Score is: 0.695239
+
+Student Id is: Emily_Dooley
+Exam Number is: 15593
+Score is: 0.860370
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15593
+Score is: 1.008464
+
+Student Id is: Cecile44
+Exam Number is: 15593
+Score is: 0.724465
+
+Student Id is: Aric23
+Exam Number is: 15593
+Score is: 0.769570
+
+Student Id is: Charity15
+Exam Number is: 15593
+Score is: 0.641253
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15593
+Score is: 0.584308
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15593
+Score is: 0.888450
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15593
+Score is: 0.706877
+
+Student Id is: Douglas84
+Exam Number is: 15593
+Score is: 0.591178
+
+Student Id is: Lydia82
+Exam Number is: 15593
+Score is: 0.544889
+
+Student Id is: Clay.Hermann
+Exam Number is: 15593
+Score is: 0.842384
+
+Student Id is: Pearlie84
+Exam Number is: 15593
+Score is: 0.795225
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15593
+Score is: 0.870016
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15593
+Score is: 0.913233
+
+Student Id is: Nick_Crooks73
+Exam Number is: 15594
+Score is: 0.745952
+
+Student Id is: Daniela.OConnell
+Exam Number is: 15594
+Score is: 0.748094
+
+Student Id is: Reyes92
+Exam Number is: 15594
+Score is: 0.730097
+
+Student Id is: Nikki47
+Exam Number is: 15594
+Score is: 0.676342
+
+Student Id is: Liam.Friesen
+Exam Number is: 15594
+Score is: 0.755095
+
+Student Id is: Cesar_Stokes55
+Exam Number is: 15594
+Score is: 0.805894
+
+Student Id is: Emily_Dooley
+Exam Number is: 15594
+Score is: 0.629196
+
+Student Id is: Rusty_Hudson
+Exam Number is: 15594
+Score is: 0.691453
+
+Student Id is: Cecile44
+Exam Number is: 15594
+Score is: 0.805958
+
+Student Id is: Aric23
+Exam Number is: 15594
+Score is: 0.599864
+
+Student Id is: Charity15
+Exam Number is: 15594
+Score is: 0.793207
+
+Student Id is: Alexys.Quitzon41
+Exam Number is: 15594
+Score is: 0.536067
+
+Student Id is: Elijah.Kunze32
+Exam Number is: 15594
+Score is: 0.853514
+
+Student Id is: Garnett.Stark31
+Exam Number is: 15594
+Score is: 0.764592
+
+Student Id is: Douglas84
+Exam Number is: 15594
+Score is: 0.671031
+
+Student Id is: Lydia82
+Exam Number is: 15594
+Score is: 0.737666
+
+Student Id is: Clay.Hermann
+Exam Number is: 15594
+Score is: 0.737149
+
+Student Id is: Pearlie84
+Exam Number is: 15594
+Score is: 0.576459
+
+Student Id is: Reece_Wisoky6
+Exam Number is: 15594
+Score is: 0.843927
+
+Student Id is: Archibald.Weissnat79
+Exam Number is: 15594
+Score is: 0.826325
+

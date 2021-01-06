@@ -38,8 +38,8 @@ func studentMarks(w http.ResponseWriter, r *http.Request){
 	if marks, ok:=studentToMarks[id]; ok{
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("200 - Okay\n"))
-		average := 0.0 
 		
+		average := 0.0 
 		for _,num := range marks{
 			s := fmt.Sprintf("%f", num)
 			fmt.Fprintf(w, s +"\n")
@@ -91,8 +91,8 @@ func examMarks(w http.ResponseWriter, r *http.Request){
 	if marks, ok := examToMarks[number]; ok{
 		w.WriteHeader(http.StatusOK)
 		w.Write([]byte("200 - Okay\n"))
-		average := 0.0
 		
+		average := 0.0
 		for _,num := range marks{
 			s := fmt.Sprintf("%f", num)
 			w.Write([]byte(s +"\n"))
